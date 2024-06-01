@@ -1,0 +1,15 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  font-size: 20px;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
