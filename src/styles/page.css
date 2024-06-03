@@ -1,0 +1,67 @@
+.page {
+  border: 1px solid grey;
+  height: 1123px;
+  width: 794px;
+  padding: 30px;
+  font-size: 1rem;
+  font-family: 'Inter';
+}
+
+.page .top .name {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin: 0px;
+}
+
+.profile {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.profile div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile div:nth-child(1) span:nth-child(1) {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.profile .contents {
+  font-size: 0.8rem;
+  padding-left: 30px;
+  font-weight: 300;
+}
+
+.page > div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+}
+
+.page .main {
+  flex: 0.67 0.67 auto;
+}
+
+.page .sidebar {
+  margin-left: 20px;
+  flex: 0.33 0.33 auto;
+
+}
+
+.page .sidebar span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 15px 0px;
+  display: block;
+}
+
+.page .sidebar p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 5px 0px;
+}

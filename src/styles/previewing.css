@@ -1,0 +1,22 @@
+button {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 0px;
+  background-color: rgb(3, 3, 156);
+  color: white;
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+button:hover {
+  transform: scale(0.97);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  width: 50%;
+  margin-bottom: 20px;
+}
