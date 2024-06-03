@@ -1,0 +1,69 @@
+.sect {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 50px;
+}
+
+.sect .head {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  user-select: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.sect div {
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+
+.sect div:nth-child(1):hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.sect span {
+  display: flex;
+  align-items: center;
+}
+
+.sect img {
+  fill: black;
+  height: 50px;
+  width: auto;
+  transform: rotate(180deg);
+}
+
+.sect .dd-animate-down {
+  animation: dropdown 0.5s ease 0s 1  ;
+  transform: rotate(0deg);
+}
+
+@keyframes dropdown {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.sect .dd-animate-up{
+  animation: dropup 0.5s ease 0s 1  ;
+  transform: rotate(180deg);
+}
+
+@keyframes dropup {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+}
+

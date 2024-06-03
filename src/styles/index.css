@@ -1,6 +1,6 @@
 body {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 :root {
@@ -8,8 +8,6 @@ body {
 }
 
 #root {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

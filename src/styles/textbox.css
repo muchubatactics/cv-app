@@ -1,7 +1,19 @@
 input.name {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-input {
-  border: 0px;
+.textbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.textbox label {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.textbox input {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
