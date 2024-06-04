@@ -39,18 +39,15 @@
 }
 
 .page > div:nth-child(2) {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .page .main {
-  flex: 0.67 0.67 auto;
 }
 
 .page .sidebar {
   margin-left: 20px;
-  flex: 0.33 0.33 auto;
-
 }
 
 .page .sidebar span {

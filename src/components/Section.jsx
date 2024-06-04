@@ -3,7 +3,7 @@ import '../styles/section.css';
 import dropdown_icon from '../assets/dropdown.svg';
 import { useState } from "react";
 
-export default function Section({text, inputs}) {
+export default function Section({text, inputs, callback, data}) {
   const [isShowing, setIsShowing] = useState(false);
   const [svgClass, setSvgClass] = useState('');
 
@@ -24,7 +24,7 @@ export default function Section({text, inputs}) {
         isShowing ? inputs.map(
           (input) => {
             return (
-              <Textbox name={input.name} key={input.id} type={input.type} />
+              <Textbox name={input.name} key={input.id} type={input.type} callback={callback} data={data} />
             );
           }
         ) : null

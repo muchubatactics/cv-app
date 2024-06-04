@@ -1,11 +1,11 @@
 import '../styles/page.css';
 
-export default function Page(props) {
+export default function Page({data}) {
   return (
     <div className='page'>
       <div className="top">
-        <h1 className="name">Matthew Jones</h1>
-        <span className='title'>Financial Analyst</span>
+        <h1 className="name">{data.name}</h1>
+        <span className='title'>{data.title}</span>
       </div>
       <div>
         <div className="main">
@@ -15,7 +15,7 @@ export default function Page(props) {
               <span>Profile</span>
             </div>
             <div className="contents">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dolor tortor, lobortis vitae urna vitae, vehicula finibus nibh. Maecenas elementum tellus vel ex sodales sagittis. Duis porttitor lacinia tellus, id mattis tellus vestibulum eu. Nam vestibulum porttitor faucibus. Donec porttitor nisi nec quam malesuada, at blandit tortor cursus. Phasellus tempor leo eget ullamcorper placerat. Curabitur pellentesque dui vel lectus egestas, at pretium metus malesuada. Vivamus eleifend volutpat molestie. Vestibulum mollis eros metus, at ullamcorper velit tempor eu. Vestibulum et velit vulputate, pretium ante in, placerat urna. Phasellus cursus faucibus mollis. Nulla ac dolor turpis. Sed id nulla et dolor tincidunt feugiat nec ac felis. Phasellus sit amet mollis arcu. Suspendisse eu mi at felis ultrices sodales id at enim. Nullam viverra efficitur libero at mattis.
+              {data.about}
             </div>
           </div>
           <div className="employ-hist"></div>
@@ -25,23 +25,26 @@ export default function Page(props) {
         <div className="sidebar">
           <div className="contact">
             <span>Details</span>
-            <p>33 Oklahoma Road, New York, NY 10024, United States</p>
-            <p>(917) 407-5112</p>
-            <p>mpj23@gmail.com</p>
+            <p>{data.location}</p>
+            <p>{data.tel}</p>
+            <p>{data.email}</p>
+            <p>{data.website}</p>
           </div>
           <div className="skills">
             <span>Skills</span>
-            <p>Financial Planning</p>
-            <p>Strategic Planning</p>
-            <p>Financial Analysis</p>
-            <p>Market Assessment</p>
-            <p>Team Leadership</p>
+            {
+              data.skills.map((val) => {
+                return (<p key={val.id}>{val.val}</p>);
+              })
+            }
           </div>
           <div className="lang">
             <span>Languages</span>
-            <p>English</p>
-            <p>Japanese</p>
-            <p>Nihongo</p>
+            {
+              data.languages.map((val) => {
+                return (<p key={val.id}>{val.val}</p>);
+              })
+            }
           </div>
         </div>
       </div>
