@@ -17,3 +17,23 @@ input.name {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
+
+.textbox .array-input {
+  display: flex;
+  align-items: center;
+
+}
+
+.array-input input, .array-input textarea {
+  flex: 1 1 0;
+  margin-bottom: 0px;
+}
+
+.array-input svg {
+  height: 1rem;
+  width: 1rem;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
