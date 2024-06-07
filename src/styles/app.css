@@ -18,3 +18,9 @@ h1 {
   margin: 0px;
   margin-bottom: 20px;
 }
+
+textarea {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+}

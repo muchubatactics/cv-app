@@ -15,13 +15,13 @@
   border-radius: 10px;
 }
 
-.sect div {
+.sect > div {
   padding-left: 50px;
   padding-right: 20px;
 }
 
 
-.sect div:nth-child(1):hover {
+.sect > div:nth-child(1):hover {
   background-color: rgb(241, 241, 241);
 }
 

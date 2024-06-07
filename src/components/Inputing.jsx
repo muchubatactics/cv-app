@@ -16,6 +16,7 @@ export default function Inputing({className, callback, data}) {
         ]
       } 
       callback={callback} data={data}/>
+
       <Section text="Contact Information" inputs=
       {
         [
@@ -26,6 +27,10 @@ export default function Inputing({className, callback, data}) {
         ]
       }
       callback={callback} data={data}/>
+
+      <Section text="Employment Experience" special={true} callback={callback} data={data} />
+      <Section text="Education" special={true} callback={callback} data={data} />
+
       <Section text="Skills" inputs={[{name: 'skills', id: 1, type: 0}]} callback={callback} data={data} /> 
       <Section text="Languages" inputs={[{name: 'languages', id: 1, type: 0}]} callback={callback} data={data} /> 
     </div>

@@ -1,0 +1,33 @@
+.sect > .detailed-input {
+  padding: 10px 30px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailed-input label {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.detailed-input input {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.detailed-input span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailed-input .btns {
+  margin-left: auto;
+}
+
+.detailed-input button {
+  margin: 10px;
+}

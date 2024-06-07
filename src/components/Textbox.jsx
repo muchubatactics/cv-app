@@ -24,7 +24,6 @@ export default function Textbox({name, type, callback, data}) {
       id++;
       return {val: str, id: id}
     });
-    console.log("here", arr);
     return arr;
   }
 
@@ -37,7 +36,6 @@ export default function Textbox({name, type, callback, data}) {
         str += (arr[i].val + ', ');
       }
     }
-    console.log("here", str);
     return str;
   }
 

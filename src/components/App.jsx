@@ -10,7 +10,7 @@ const sampleData = {
   location: '33 Oklahoma Road, New York, NY 10024, United States',
   tel: '(917) 407-5112',
   email: 'mpj23@gmail.com',
-  website: null,
+  website: '',
   skills: [
     {val: 'Financial Planning',  id: 1},
     {val: 'Strategic Planning',  id: 2},
@@ -22,7 +22,39 @@ const sampleData = {
     {val: 'English',  id: 1},
     {val: 'Japanese',  id: 2},
     {val: 'Nihongo', id: 3},
-  ]
+  ],
+  work: [
+    {
+      title: 'Financial Analyst at GEO Corp., New York',
+      from: 'October 2012',
+      to: 'September 2019',
+      details: 'Created budgets and ensured that labor costs were decreased by 15 percent. Generated financial statements including cash flow charts and balance sheets. Introduced and implemented a different type of innovative software.',
+      id: 1,
+    },
+    {
+      title: 'Financial Analyst at Sisco Enterprises, New York',
+      from: 'September 2008',
+      to: 'September 2012',
+      details: 'Created budgets and ensured that labor costs were decreased by 15 percent. Generated financial statements including cash flow charts and balance sheets. Introduced and implemented a different type of innovative software.',
+      id: 2,
+    },
+  ],
+  education: [
+    {
+      title: 'Bachelor of Finance, Villaova University, King of Prussia',
+      from: 'August 2004',
+      to: 'May 2008',
+      details: 'Graduated best of my class',
+      id: 1,
+    },
+    {
+      title: 'High School Diploma, Mary Stuart Insitute of Diplomas',
+      from: 'September 2000',
+      to: 'June 2004',
+      details: '',
+      id: 2,
+    },
+  ],
 };
 
 export default function App() {

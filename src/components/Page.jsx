@@ -1,6 +1,30 @@
 import '../styles/page.css';
 
 export default function Page({data}) {
+
+  function formatDetails(str) {
+    let id = 0;
+    let arr = str.split('.').map((strr) => {
+      return {val: strr, id: ++id};
+    });
+    return (
+      <>
+      {
+        arr.map((obj) => {
+          return (
+            obj.val ? (
+              <div className='details-instance' key={obj.id}>
+                <span><svg xmlns="http://www.w3.org/2000/svg" height="5px" viewBox="0 -960 960 960" width="5px" fill="#00000"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"/></svg></span>
+                <span>{obj.val}</span>
+              </div>
+            ) : null
+          )
+        })
+      }
+      </>
+    );
+  }
+
   return (
     <div className='page'>
       <div className="top">
@@ -18,6 +42,7 @@ export default function Page({data}) {
               {data.about}
             </div>
           </div>
+          
           <div className="employ-hist">
             <div>
               <span>
@@ -25,15 +50,47 @@ export default function Page({data}) {
               </span>
               <span>Employment History</span>
             </div>
+            <div className="work-area">
+              {
+                data.work.map((obj) => {
+                  return (
+                    <div key={obj.id} className='work-instance'>
+                      <div className="title">{obj.title}</div>
+                      <div className="from to">{obj.from} - {obj.to}</div>
+                      <div className="details">
+                        {formatDetails(obj.details)}
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
           </div>
+
           <div className="educ">
-              <div>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M840-280v-276L480-360 40-600l440-240 440 240v320h-80ZM480-120 200-272v-200l280 152 280-152v200L480-120Z"/></svg>
-                </span>
-                <span>Education</span>
-              </div>
+            <div>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M840-280v-276L480-360 40-600l440-240 440 240v320h-80ZM480-120 200-272v-200l280 152 280-152v200L480-120Z"/></svg>
+              </span>
+              <span>Education</span>
+            </div>
+            <div className="education-area">
+              {
+                data.education.map((obj) => {
+                  return (
+                    <div key={obj.id} className='education-instance'>
+                      <div className="title">{obj.title}</div>
+                      <div className="from to">{obj.from} - {obj.to}</div>
+                      <div className="details">
+                        {formatDetails(obj.details)}
+                      </div>
+                    </div>
+                  );
+                })
+              }
+            </div>
           </div>
+
           <div className="ref">
               <div>
                 <span>
