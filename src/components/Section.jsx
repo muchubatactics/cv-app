@@ -3,6 +3,7 @@ import '../styles/section.css';
 import dropdown_icon from '../assets/dropdown.svg';
 import { useState } from "react";
 import DetailedInput from "./DetailedInput";
+import Button from "./Button";
 
 export default function Section({text, inputs, callback, data, special}) {
   const [isShowing, setIsShowing] = useState(false);
@@ -13,6 +14,10 @@ export default function Section({text, inputs, callback, data, special}) {
       return prev ? false : true;
     });
     setSvgClass(isShowing ? 'dd-animate-up': 'dd-animate-down');
+  }
+
+  function handleAddNew() {
+
   }
 
   return (
@@ -29,15 +34,15 @@ export default function Section({text, inputs, callback, data, special}) {
             {
               text === 'Education' ? (
                 data.education.map((obj) => {
-                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback}/>
+                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback} educ={true} />
                 })
               ) : (
                 data.work.map((obj) => {
-                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback}/>
+                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback} educ={false} />
                 })
               )
             }
-            <button>Add New</button>
+            <Button text='Add New' func={handleAddNew}/>
           </>
         ): null
         :
@@ -52,3 +57,5 @@ export default function Section({text, inputs, callback, data, special}) {
     </div>
   );
 }
+
+// ::todo work on add new

@@ -29,14 +29,14 @@ const sampleData = {
       from: 'October 2012',
       to: 'September 2019',
       details: 'Created budgets and ensured that labor costs were decreased by 15 percent. Generated financial statements including cash flow charts and balance sheets. Introduced and implemented a different type of innovative software.',
-      id: 1,
+      id: 0,
     },
     {
       title: 'Financial Analyst at Sisco Enterprises, New York',
       from: 'September 2008',
       to: 'September 2012',
       details: 'Created budgets and ensured that labor costs were decreased by 15 percent. Generated financial statements including cash flow charts and balance sheets. Introduced and implemented a different type of innovative software.',
-      id: 2,
+      id: 1,
     },
   ],
   education: [
@@ -45,14 +45,14 @@ const sampleData = {
       from: 'August 2004',
       to: 'May 2008',
       details: 'Graduated best of my class',
-      id: 1,
+      id: 0,
     },
     {
       title: 'High School Diploma, Mary Stuart Insitute of Diplomas',
       from: 'September 2000',
       to: 'June 2004',
       details: '',
-      id: 2,
+      id: 1,
     },
   ],
 };
