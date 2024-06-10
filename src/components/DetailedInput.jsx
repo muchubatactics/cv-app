@@ -2,7 +2,7 @@ import '../styles/detailed.css';
 import { useState } from 'react';
 import Button from './Button';
 
-export default function DetailedInput({callback, data, obj, educ}) {
+export default function DetailedInput({callback, data, obj, educ, rerender}) {
   const [val, setVal] = useState(obj);
   const [minimized, setMinimized] = useState(true);
 
@@ -45,8 +45,8 @@ export default function DetailedInput({callback, data, obj, educ}) {
     let objj;
     if (educ) objj = {education: arr};
     else objj = {work: arr};
-    callback(objj);
     rerender();
+    callback(objj);
   }
 
   return (

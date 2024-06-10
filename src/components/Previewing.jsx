@@ -34,3 +34,5 @@ export default function Previewing({className, data, loadsamplecallback}) {
     </div>
   );
 }
+
+// ::todo make sure it prints with styles

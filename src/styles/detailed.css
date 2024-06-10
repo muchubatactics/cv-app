@@ -1,5 +1,6 @@
 .sect > .detailed-input {
-  padding: 10px 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -35,7 +36,6 @@
 .detailed-input-minimized {
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
-  padding: 5px;
   margin: 5px;
 }
 
