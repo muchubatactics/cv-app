@@ -2,7 +2,7 @@ import '../styles/detailed.css';
 import { useState } from 'react';
 import Button from './Button';
 
-export default function DetailedInput({callback, data, obj, educ, rerender}) {
+export default function DetailedInput({callback, data, obj, educ}) {
   const [val, setVal] = useState(obj);
   const [minimized, setMinimized] = useState(true);
 
@@ -39,13 +39,12 @@ export default function DetailedInput({callback, data, obj, educ, rerender}) {
     arr = arr.filter((xx) => {
       return xx.id != val.id;
     });
-    for (let i = 0; i < arr.length; i++) {
-      arr[i].id = i;
-    }
+    // for (let i = 0; i < arr.length; i++) {
+    //   arr[i].id = i;
+    // }
     let objj;
     if (educ) objj = {education: arr};
     else objj = {work: arr};
-    rerender();
     callback(objj);
   }
 
@@ -75,5 +74,3 @@ export default function DetailedInput({callback, data, obj, educ, rerender}) {
     )
   );
 }
-
-// ::todo force a rerender when something is deleted

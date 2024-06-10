@@ -32,10 +32,6 @@ export default function Section({text, inputs, callback, data, special}) {
     setSvgClass('');
   }
 
-  function callbackToForceRender() {
-    setIsShowing(false);
-  }
-
   return (
     <div className="sect">
       <div onClick={handleClick} className="head">
@@ -50,11 +46,11 @@ export default function Section({text, inputs, callback, data, special}) {
             {
               text === 'Education' ? (
                 data.education.map((obj) => {
-                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback} educ={true} rerender={callbackToForceRender} />
+                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback} educ={true} />
                 })
               ) : (
                 data.work.map((obj) => {
-                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback} educ={false} rerender={callbackToForceRender} />
+                  return <DetailedInput key={obj.id} data={data} obj={obj} callback={callback} educ={false} />
                 })
               )
             }
