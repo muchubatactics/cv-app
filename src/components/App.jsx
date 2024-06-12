@@ -55,6 +55,18 @@ const sampleData = {
       id: 1,
     },
   ],
+  refs: [
+    {
+      name: 'Ssenono Jordan Michael',
+      contact: 'sjm@email.com',
+      id: 0,
+    },
+    {
+      name: 'Muchuba Tactics',
+      contact: 'mt1234321@domain.com',
+      id: 1,
+    }
+  ],
 };
 
 export default function App() {
@@ -80,3 +92,5 @@ export default function App() {
 }
 
 // ::todo style the thing
+// ::todo make sure pdf is styled well
+// ::add references

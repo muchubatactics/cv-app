@@ -92,12 +92,24 @@ export default function Page({data}) {
           </div>
 
           <div className="ref">
-              <div>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M720-440v-80h160v80H720Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM200-200v-160h-40q-33 0-56.5-23.5T80-440v-80q0-33 23.5-56.5T160-600h160l200-120v480L320-360h-40v160h-80Zm360-146v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346Z"/></svg>
-                </span>
-                <span>References</span>
-              </div>
+            <div>
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M720-440v-80h160v80H720Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM200-200v-160h-40q-33 0-56.5-23.5T80-440v-80q0-33 23.5-56.5T160-600h160l200-120v480L320-360h-40v160h-80Zm360-146v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346Z"/></svg>
+              </span>
+              <span>References</span>
+            </div>
+            <div className="ref-area">
+              {
+                data.refs.map((obj) => {
+                  return (
+                    <div className="ref-instance" key={obj.id}>
+                      <div className="title">{obj.name}</div>
+                      <div className="contact">{obj.contact}</div>
+                    </div>
+                  );
+                })
+              }
+            </div>
           </div>
         </div>
         <div className="sidebar">

@@ -33,6 +33,8 @@ export default function Inputing({className, callback, data}) {
 
       <Section text="Skills" inputs={[{name: 'skills', id: 1, type: 0}]} callback={callback} data={data} /> 
       <Section text="Languages" inputs={[{name: 'languages', id: 1, type: 0}]} callback={callback} data={data} /> 
+
+      <Section text="References" special={true} callback={callback} data={data} />
     </div>
   );
 }

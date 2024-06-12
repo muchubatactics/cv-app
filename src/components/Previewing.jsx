@@ -9,7 +9,6 @@ export default function Previewing({className, data, loadsamplecallback}) {
   }
 
   function handlePrint() {
-    console.log('here');
     let win = window.open('', 'PRINT', 'height=1123,width=794,top=100,left=150');
     win.document.write('<html><head><title>my cv</title>');
     win.document.write(`<link rel='stylesheet' href='/src/styles/page.css' type='text/css' media='print'/>`);
