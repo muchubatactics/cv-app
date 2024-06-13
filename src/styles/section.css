@@ -5,18 +5,19 @@
 }
 
 .sect .head {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 1.7rem;
+  font-weight: 400;
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   justify-content: space-between;
   user-select: none;
   padding: 5px 10px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .sect > div {
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 20px;
 }
 
@@ -32,7 +33,7 @@
 
 .sect img {
   fill: black;
-  height: 50px;
+  height: 30px;
   width: auto;
   transform: rotate(180deg);
 }

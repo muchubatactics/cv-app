@@ -11,7 +11,7 @@ export default function RefInput({callback, data, obj}) {
   }
 
   return (
-    <div>
+    <div className="ref-input">
       <span>
         <label htmlFor="refname">Name:</label>
         <input type="text" name="refname" id="refname" value={val.name} onChange={handleChange}/>

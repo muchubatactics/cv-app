@@ -10,18 +10,25 @@ input.name {
 .textbox label {
   font-family: 'Inter', sans-serif;
   font-size: 1.3rem;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 
 .textbox input {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  padding: 5px;
+  border: 1px solid rgb(3, 3, 156);
+  /* border-radius: 5px; */
+  color: rgb(63, 63, 63);
+}
+
+.textbox input:focus {
+  outline: .7pt solid rgb(3, 3, 156);
 }
 
 .textbox .array-input {
   display: flex;
   align-items: center;
-
 }
 
 .array-input input, .array-input textarea {
@@ -30,10 +37,18 @@ input.name {
 }
 
 .array-input svg {
-  height: 1rem;
-  width: 1rem;
-  padding: 5px;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 4px;
+  border-radius: 3px;
   margin: 5px;
-  border: 1px solid black;
-  border-radius: 5px;
+  border: 1px solid white;
+  fill: rgb(3, 3, 156);
+}
+
+
+.array-input svg:hover {
+  fill: white;
+  background-color: rgb(3, 3, 156);
+  border: 1px solid rgb(3, 3, 156);
 }

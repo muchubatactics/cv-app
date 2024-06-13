@@ -9,14 +9,24 @@
 .detailed-input label {
   display: block;
   font-size: 1.3rem;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
   font-family: 'Inter', sans-serif;
+  user-select: none;
 }
 
 .detailed-input input {
   font-size: 1.2rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid rgb(3, 3, 156);
+  /* border-radius: 5px; */
+  color: rgb(63, 63, 63);
 }
+
+.detailed-input input:focus {
+  outline: .7pt solid rgb(3, 3, 156);
+}
+
 
 .detailed-input span {
   display: flex;
@@ -31,14 +41,48 @@
 
 .detailed-input button {
   margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 0px;
 }
 
 .detailed-input-minimized {
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
-  margin: 5px;
+  padding: 5px;
+  user-select: none;
 }
 
 .detailed-input-minimized:hover {
   background-color: rgb(241, 241, 241);
 }
+
+.ref-input > span {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-bottom: 5px;
+}
+
+.ref-input > span:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+
+.ref-input > span > label {
+  font-size: 1.3rem;
+  font-family: 'Inter', sans-serif;
+  align-self: center;
+}
+
+.ref-input > span > input {
+  font-size: 1.2rem;
+  padding: 5px;
+  align-self: center;
+  color: rgb(63, 63, 63);
+  border: 1px solid rgb(3, 3, 156);
+}
+
+.ref-input > span > input:focus {
+  outline: .7pt solid rgb(3, 3, 156);
+}
+
