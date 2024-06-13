@@ -20,6 +20,10 @@ body {
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
   }
+
+  :root {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -27,5 +31,9 @@ body {
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
     padding: 10px;
+  }
+
+  :root {
+    font-size: 10px;
   }
 }
