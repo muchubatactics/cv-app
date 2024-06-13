@@ -20,6 +20,7 @@ input.name {
   border: 1px solid rgb(3, 3, 156);
   /* border-radius: 5px; */
   color: rgb(63, 63, 63);
+  font-family: 'Inter', sans-serif;
 }
 
 .textbox input:focus {
