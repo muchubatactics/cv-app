@@ -158,9 +158,9 @@ export default function Previewing({className, data, loadsamplecallback}) {
     win.document.write(`<div class='page'> ${document.querySelector('.page').innerHTML} </div>`);
     win.document.write('</body></html>');
     win.document.close();
-    win.focus();
-    
-    setTimeout( function() {win.print();win.close();} , 500 );
+    // win.focus();
+    win.print();
+    win.close();
     
   }
 
