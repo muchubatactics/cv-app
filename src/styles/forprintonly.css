@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .page {
-  border: 1px solid grey;
   height: 1123px;
   width: 794px;
-  padding: 30px;
   font-size: 1.3rem;
   font-family: 'Inter';
   user-select: none;
@@ -19,20 +17,20 @@
 
 .profile, .employ-hist, .educ, .ref {
   margin-top: 15px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .profile > div:nth-child(1), .employ-hist > div:nth-child(1), .educ > div:nth-child(1), .ref > div:nth-child(1)  {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 }
 
 .profile > div:nth-child(1) > span:nth-child(1), .employ-hist > div:nth-child(1) > span:nth-child(1), .educ > div:nth-child(1) > span:nth-child(1), .ref > div:nth-child(1) > span:nth-child(1){
-  margin-right: 5px;
   display: flex;
   align-items: center;
+  margin-right: 5px;
 }
 
 .profile > div:nth-child(1) > span:nth-child(1) > svg, 
@@ -44,7 +42,7 @@
 
 
 .profile .contents {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-left: 30px;
   font-weight: 300;
 }
@@ -70,7 +68,7 @@
 }
 
 .page .sidebar p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   margin: 5px 0px;
 }
@@ -86,33 +84,33 @@
 }
 
 .ref .ref-area .ref-instance .title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .ref .ref-area .ref-instance .contact {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
-  color: #808080;
+  color: rgb(156, 156, 156);
   margin-bottom: 10px;
 }
 
 .employ-hist .title, .educ .title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   display: flex;
   justify-content: start;
 }
 
 .employ-hist .to.from, .educ .to.from {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
-  color: grey;
+  color: rgb(156, 156, 156);
   margin-bottom: 8px;
 }
 
 .employ-hist .work-instance, .educ .education-instance {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 10px;
 }
