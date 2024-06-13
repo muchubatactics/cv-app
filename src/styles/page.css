@@ -2,10 +2,8 @@
 
 .page {
   border: 1px solid grey;
-  height: 1123px;
-  width: 794px;
   padding: 30px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: 'Inter';
   user-select: none;
 }
@@ -13,26 +11,29 @@
 .page .top .name {
   font-family: 'Poppins';
   font-weight: 600;
-  font-size: 2.3rem;
+  font-size: 2rem;
   margin: 0px;
 }
 
 .profile, .employ-hist, .educ, .ref {
-  margin-top: 15px;
-  font-size: 1.8rem;
+  margin-top: 12px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 .profile > div:nth-child(1), .employ-hist > div:nth-child(1), .educ > div:nth-child(1), .ref > div:nth-child(1)  {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .profile > div:nth-child(1) > span:nth-child(1), .employ-hist > div:nth-child(1) > span:nth-child(1), .educ > div:nth-child(1) > span:nth-child(1), .ref > div:nth-child(1) > span:nth-child(1){
-  margin-right: 5px;
+  margin-right: 10px;
+  margin-left: -5px;
   display: flex;
   align-items: center;
+  height: 18px;
+  width: 18px;
 }
 
 .profile > div:nth-child(1) > span:nth-child(1) > svg, 
@@ -44,7 +45,7 @@
 
 
 .profile .contents {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding-left: 30px;
   font-weight: 300;
 }
@@ -59,18 +60,17 @@
 
 .page .sidebar {
   margin-left: 20px;
-  max-width: 250px;
 }
 
 .page .sidebar span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
-  margin: 15px 0px;
+  margin: 12px 0px;
   display: block;
 }
 
 .page .sidebar p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   margin: 5px 0px;
 }
@@ -86,39 +86,39 @@
 }
 
 .ref .ref-area .ref-instance .title {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 500;
 }
 
 .ref .ref-area .ref-instance .contact {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #808080;
   margin-bottom: 10px;
 }
 
 .employ-hist .title, .educ .title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 500;
   display: flex;
   justify-content: start;
 }
 
 .employ-hist .to.from, .educ .to.from {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   color: grey;
   margin-bottom: 8px;
 }
 
 .employ-hist .work-instance, .educ .education-instance {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
 .details-instance {
-  margin-left: 10px;
+  margin-left: 8px;
   display: flex;
 
 }
@@ -136,3 +136,75 @@
   left: -2px;
 }
 
+@media (min-width: 320px) and (max-width: 480px) {
+  .page {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+
+  .page .top .name {
+    font-size: 1.7rem;
+  }
+  .profile, .employ-hist, .educ, .ref {
+    font-size: 1.2rem;
+  }
+  .profile > div:nth-child(1) > span:nth-child(1), .employ-hist > div:nth-child(1) > span:nth-child(1), .educ > div:nth-child(1) > span:nth-child(1), .ref > div:nth-child(1) > span:nth-child(1){
+    margin-right: 5px;
+    margin-left: 0px;
+    height: 15px;
+    width: 15px;
+  }
+  .profile .contents {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+
+  .page .sidebar {
+    margin-left: 10px;
+  }
+  
+  .page .sidebar span {
+    font-size: 1.2rem;
+    margin: 10px 0px;
+  }
+  
+  .page .sidebar p {
+    font-size: 0.9rem;
+    margin: 2px 0px;
+  }
+  .employ-hist .work-area .work-instance, .educ .education-area .education-instance , .ref .ref-area .ref-instance{
+    padding-left: 20px;
+  }
+  
+  .ref .ref-area .ref-instance .title {
+    font-size: 1rem;
+  }
+  
+  .ref .ref-area .ref-instance .contact {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .employ-hist .title, .educ .title {
+    font-size: 1rem;
+  }
+  
+  .employ-hist .to.from, .educ .to.from {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .employ-hist .work-instance, .educ .education-instance {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .details-instance {
+    margin-left: 5px;
+  }
+  
+  .details-instance > span:nth-child(1) > svg {
+    top: 3px;
+    left: -2px;
+  }  
+}

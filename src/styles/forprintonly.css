@@ -28,9 +28,12 @@
 }
 
 .profile > div:nth-child(1) > span:nth-child(1), .employ-hist > div:nth-child(1) > span:nth-child(1), .educ > div:nth-child(1) > span:nth-child(1), .ref > div:nth-child(1) > span:nth-child(1){
+  margin-right: 10px;
+  margin-left: -5px;
   display: flex;
   align-items: center;
-  margin-right: 5px;
+  height: 18px;
+  width: 18px;
 }
 
 .profile > div:nth-child(1) > span:nth-child(1) > svg, 

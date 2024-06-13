@@ -2,14 +2,13 @@
 
 #root > div {
   padding: 10px;
-
 }
-
+/* 
 .inputing {
 }
 
 .previewing {
-}
+} */
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -30,4 +29,14 @@ textarea {
 
 textarea:focus {
   outline: .7pt solid rgb(3, 3, 156);
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #root > div {
+    padding: 0px;
+  }
+  
+  .inputing {
+    margin-bottom: 20px;
+  }
 }
